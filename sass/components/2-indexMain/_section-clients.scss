@@ -1,0 +1,31 @@
+.section-clients {
+  padding-bottom: 94px;
+  &__title {
+    font-style: $font-style;
+    font-weight: $font;
+    font-size: $font-size36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+
+    margin: 0 0 50px 0;
+  }
+  &__list:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid $client-color;
+    fill: $team-social-color;
+    padding: 16px 32px;
+    cursor: pointer;
+
+    transition: border, fill $animation;
+    &:hover {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

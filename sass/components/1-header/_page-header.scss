@@ -1,0 +1,27 @@
+.page-header {
+  background-color: $background-color;
+  border-bottom: 1px solid $portfolio-bgc;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    color: $accent-color;
+    list-style: none;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: $font-style;
+    font-weight: $font;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}
+.page-header__logo--whitetheme {
+  color: $title-text-color;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

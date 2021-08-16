@@ -1,0 +1,50 @@
+.container-subscribe {
+  padding-top: 12px;
+}
+.subscribe__caption {
+  margin: 0;
+
+  font-style: $font-style;
+  font-weight: $font;
+  font-size: $font-size14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $background-color;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.social__item {
+  text-decoration: none;
+  list-style: none;
+}
+.social__list {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background-color: $footer-bgc;
+  border-radius: 50%;
+
+  transition: background-color $animation;
+  &:hover {
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+}
+.subscribe-icon {
+  fill: $background-color;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

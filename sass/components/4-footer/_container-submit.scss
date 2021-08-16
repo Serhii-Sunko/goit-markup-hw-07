@@ -1,0 +1,75 @@
+.container-submit {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-left: 0;
+  padding-top: 12px;
+}
+.submit__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.submit__caption {
+  font-style: $font-style;
+  font-weight: $font;
+  font-size: $font-size14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $background-color;
+
+  margin-bottom: 20px;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+}
+.submit__input {
+  width: 358px;
+  padding: 15px;
+
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid $border-color-submite;
+  border-radius: 4px;
+  filter: $filter-submite;
+}
+.submit-btn {
+  background-color: $accent-color;
+  color: $background-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  height: 50px;
+  min-width: 200px;
+  padding: 10px;
+  margin: 35px 0 0 12px;
+  border: none;
+  border-radius: 4px;
+  transition: color $animation;
+  &:hover {
+    box-shadow: $submit-box-shadow;
+  }
+  &__caption {
+    font-style: $font-style;
+    font-weight: $font;
+    font-size: $font-size16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__icon {
+    fill: $background-color;
+    margin-left: 10px;
+  }
+}

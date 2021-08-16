@@ -1,0 +1,47 @@
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-main {
+  background-color: $herobackground-color;
+  text-align: center;
+  padding: 200px 0;
+}
+.section-main__caption {
+  font-style: $font-style;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color;
+
+  width: 696px;
+  margin: 0 auto;
+}
+.section-main__btn {
+  background-color: $accent-color;
+  color: $background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-top: 30px;
+  padding: 10px 32px;
+}
+.section-main__label {
+  font-style: $font-style;
+  font-weight: $font;
+  font-size: $font-size16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}

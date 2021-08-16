@@ -1,0 +1,59 @@
+.page-footer {
+  background-color: $herobackground-color;
+  padding: 60px 0;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.page-footer__logo {
+  color: $accent-color;
+  list-style: none;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: $font-style;
+  font-weight: $font;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.page-footer__logo--whitetheme {
+  color: $background-color;
+}
+.footer-logo {
+  display: inline-flex;
+  padding-bottom: 20px;
+}
+.footer-location {
+  display: flex;
+  &__list {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    margin-bottom: 9px;
+  }
+  &__link {
+    text-decoration: none;
+    list-style: none;
+    font-style: $font-style;
+    font-weight: $font-wtightnormal;
+    font-size: $font-size14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $background-color;
+  }
+  &__mail-link,
+  &__tel-link {
+    list-style: none;
+    text-decoration: none;
+    font-style: $font-style;
+    font-weight: $font-wtightnormal;
+    font-size: $font-size14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $tel-mail-color;
+  }
+}

@@ -1,0 +1,36 @@
+.auth-nav {
+  list-style: none;
+  font-style: $font-style;
+  font-weight: $font-weight500;
+  font-size: $font-size14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+  padding-left: 0;
+
+  &__link {
+    text-decoration: none;
+    color: $primery-text-color;
+
+    display: flex;
+    align-items: baseline;
+    padding: 32px 0;
+
+    transition: color $animation;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.auth-nav__list:last-child {
+  margin-left: 50px;
+}
