@@ -1,0 +1,71 @@
+.hero {
+    &__container {
+        background-color: #c4c4c4;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 118px 0;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+        @include hero-bg('mobile', '1');
+
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    @include hero-bg('mobile', '2');
+                }
+        }
+
+        @media screen and (min-width: 768px) {
+            @include hero-bg('tablet', '1');
+
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        @include hero-bg('tablet', '2');
+                    }
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include hero-bg('desktop', '1');
+
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        @include hero-bg('desktop', '2');
+                    }
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: getColor('bg-1');
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.36;
+        word-wrap: break-word;
+        text-align: center;
+        margin: 0 auto 30px auto;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+        }
+    }
+
+    &__button {
+        background-color: getColor('hover-color');
+        color: getColor('bg-1');
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        width: 200px;
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+    }
+}

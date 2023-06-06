@@ -1,0 +1,39 @@
+.job {
+    padding: 0 0 94px 0;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__title {
+        @extend %title-font;
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &__text {
+        display: block;
+        color: #ffffff;
+        height: 70px;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: getColor('job-bg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 4px;
+    }
+}

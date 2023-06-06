@@ -1,0 +1,29 @@
+%social-links {
+    display: flex;
+    padding: 0 32px;
+}
+
+// Not last child
+%social-links__item {
+    margin-right: 10px;
+}
+
+%social-links__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    @include animation2(color, background-color);
+}
+
+%social-links__link--hover-or-focus {
+    background-color: getColor('hover-color');
+    color: getColor('bg-1');
+}
+
+%social-links__icon {
+    fill: currentColor;
+}

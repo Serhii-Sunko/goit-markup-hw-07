@@ -1,0 +1,91 @@
+.cards-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &__item {
+            @include flex-formula(2);
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }      
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item {
+            @include flex-formula(3);
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    
+    &__link {
+        @include animation(box-shadow);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        display: block;
+        @extend %portfolio-card-shadow;
+    }
+
+    &__img-and-text {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__animated-description {
+        height: 100%;
+        position: absolute;
+        padding: 63px 24px;
+        background-color: rgba(33, 150, 243, 0.9);
+        @include animation(transform);
+    }
+
+    &__animated-text {
+        color: getColor('bg-1');
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    &__link:hover &__animated-description,
+    &__link:focus &__animated-description {
+        transform: translateY(-100%);
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__description {
+        padding: 20px 24px;
+        border: 1px solid #eeeeee;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        color: getColor('second-color');
+        font-size: 16px;
+        line-height: 1.875;
+    }
+}

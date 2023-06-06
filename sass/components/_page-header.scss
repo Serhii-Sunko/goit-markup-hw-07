@@ -1,0 +1,128 @@
+.page-header {
+    border-bottom: 1px solid getColor('header-border-color');
+    padding: 19px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 24px 0;
+    }
+
+    .container {
+        display: flex;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: space-between;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
+
+    &__links {
+        display: none;
+        align-items: center;
+        
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.logo {
+    @extend %logo-font;
+    color: getColor('black');
+    margin-right: 93px;
+    width: 145px;
+
+    &__text {
+        color: getColor('hover-color');
+    }
+}
+
+.p{
+    @extend %logo-font;
+    font-size: 10px;
+    line-height: 13px;
+    padding-left: 80px;
+    color: getColor('black');
+    margin-bottom: 0;
+}
+
+.nav__link {
+    font-weight: 500;
+    @include animation(color);
+    position: relative;
+    &:hover,
+    &:focus {
+        color: getColor('hover-color');
+    }
+
+    &:not(&--current)::after {
+        @extend %header-link-decor;
+        @include animation(transform);
+        transform: scale(0);
+    }
+
+    &:not(&--current):hover::after {
+        @extend %header-link-decor;
+        transform: scale(1);
+    }
+
+    &--current {
+        color: getColor('hover-color');
+    }
+
+    &--current::after {
+        @extend %header-link-decor;
+    }
+}
+
+.contacts {
+        display: none;
+        align-items: center;
+        margin-left: auto;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__link {
+            color: getColor('second-color');
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            @include animation(color);
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: getColor('hover-color');
+        }
+
+        &__icon {
+            fill: currentColor;
+            margin-right: 10px;
+        }
+}
