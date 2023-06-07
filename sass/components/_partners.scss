@@ -9,7 +9,7 @@
         text-align: left;
         text-transform: uppercase;
 
-        padding-left: 30px;
+        padding-left: 23px;
 
     
     }
@@ -17,8 +17,8 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -30px;
-        margin-bottom: -30px;
+        margin-left: -23px;
+        margin-bottom: -23px;
     }
 
     &__countrydescription{
@@ -29,8 +29,8 @@
 
     @media screen and (max-width: 767px) {
         &__item {
-            margin-bottom: 30px;
-            margin-left: 30px;
+            margin-bottom: 23px;
+            margin-left: 23px;
             @include flex-formula(2);
         }
     }
@@ -38,16 +38,16 @@
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
         &__item {
-            margin-bottom: 30px;
-            margin-left: 30px;
+            margin-bottom: 23px;
+            margin-left: 23px;
             @include flex-formula(3);
         }
     }
 
     @media screen and (min-width: 1200px) {
         &__item {
-            margin-bottom: 30px;
-            margin-left: 30px;
+            margin-bottom: 23px;
+            margin-left: 23px;
             @include flex-formula(6);
             align-items: center;
         }
@@ -55,6 +55,7 @@
 
     &__link  {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border: 1px solid getColor('partners-color');
