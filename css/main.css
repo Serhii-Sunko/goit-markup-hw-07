@@ -1089,11 +1089,13 @@ a {
   font-size: 14px;
   line-height: 2;
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 .card__text {
   color: #808080;
-  font-size: 16px;
-  line-height: 1.875;
+  font-size: 12px;
+  line-height: 1.166;
+  text-transform: uppercase;
 }
 
 .footer {
