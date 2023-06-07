@@ -41,5 +41,5 @@
 }
 
 @mixin flex-formula($amount) {
-    flex-basis: calc(100% / #{$amount} - 30px);
+    flex-basis: calc(100% / #{$amount} - 23px);
 }
