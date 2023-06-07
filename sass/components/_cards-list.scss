@@ -22,7 +22,7 @@
 
     @media screen and (min-width: 1200px) {
         &__item {
-            @include flex-formula(5);
+            @include flex-formula(4);
             margin-left: 23px;
             margin-bottom: 23px;
         }
@@ -78,7 +78,7 @@
 
     &__title {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 2;
         margin-bottom: 4px;
     }
